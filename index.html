@@ -30,27 +30,26 @@
             font-size: 16px;
             line-height: 1.5em;
             border-left: 1px solid #fff;
+			position: relative;
          }
           
          #accordion li img {
             border: none;
             border-right: 1px solid #fff;
-            margin: -15px 15px 0 0;
-            transform:translateY(50%);
-            
+            margin: 5px 5px 5px 10px;            
+			position: absolute;
+			bottom: 0;
          }
           
          #accordion li.active {
             width: 450px;
          }
          
-         .rotate {
-           -moz-transform: rotate(270deg);
-           -webkit-transform: rotate(270deg);
-           -o-transform: rotate(270deg);
-           -ms-transform: rotate(270deg);
-           transform: rotate(270deg);
-         }
+		 .boxtext{
+			margin: 0 0 0 60px;
+            overflow: hidden;
+		 }
+         
       </style>
       
       
@@ -84,30 +83,41 @@
       <ul id="accordion">
          <li style="background-color: #ff8f33">
            <img src="assets/img/teamlead2.png" />
-           <strong>Section 1 Team Lead</strong><br/>
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque.
+		   <div class='boxtext'>
+				<strong>Team Lead</strong><br/>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque.
+		   </div>
+           
          </li>
          <li style="background-color: #ffab66">
            <img src="assets/img/awscloud2.png" />
-           <strong>Section 2 AWS Cloud</strong><br/>
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque.
+		   <div class='boxtext'>
+			<strong>AWS Cloud</strong><br/>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque.
+			</div>
          </li>
          <li style="background-color: #ffb980">
            <img src="assets/img/webdeveloper2.png" />
-           <strong>Section 3 Web Development</strong><br/>
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque.
+		   <div class='boxtext'>
+			<strong>Web Developer</strong><br/>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque.
+			</div>
          </li>
          <li style="background-color: #ffd5b3">
            <img src="assets/img/volunteer2.png" />
-           <strong>Section 4 Volunteer</strong><br/>
-           Kadena Junior High School Table tennis couch since 2010
-            <br>
+           <div class='boxtext'>
+			<strong>Volunteer</strong><br/>
+			Kadena Junior High School Table tennis couch since 2010
+				<br>
            Okinawa Table Tennis Large Ball organization web designer since 2018
+		   </div>
          </li>
          <li style="background-color: #ffe3cc">
            <img src="assets/img/contact2.png" />
-           <strong>Section 5 Contact</strong><br/>
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque.
+		   <div class='boxtext'>
+			   <strong>Contact</strong><br/>
+			   Lorem ipsum dolor sit amet, consectetur adipiscing elit. In iaculis volutpat quam, non suscipit arcu accumsan at. Aliquam pellentesque.
+		   </div>
        </li>
       </ul> 
    </div>
